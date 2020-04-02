@@ -1,3 +1,31 @@
-h1{
-    color: blue;
+html{
+    background-color: red;
+}
+body{
+    width: 70%;
+    margin: auto;
+}
+#container{
+    background-color: yellow ;
+    margin: auto;
+    text-align: center;
+}
+.card{
+    height: 200px;
+}
+#diceholder{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 250px;
+    width: 500px;
+    background-color: blue;
+    border: 5px solid black;
+    display: block;
+}
+input[type="text"]{
+    width: 70px;
+}
+#submit{
+    margin-left:1rem;
 }
