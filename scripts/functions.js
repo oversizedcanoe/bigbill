@@ -54,6 +54,7 @@ function Reset(){
         $("#" + i).attr("src", "pics/" + i + "S.png");
     }
     total=78;
+    $("#total").text(total);
 }
 
 
