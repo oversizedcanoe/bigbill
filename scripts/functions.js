@@ -2,6 +2,22 @@ let x;
 let list = [];
 let total = 78;
 
+function ShuffleDice(){
+    let z = 0;
+    let interval = setInterval(function (){
+        
+        x = Math.floor((Math.random() * 6) + 1);
+        $("#dice1").attr("src", "pics/dice"+ x +".png");
+        x = Math.floor((Math.random() * 6) + 1);
+        $("#dice2").attr("src", "pics/dice"+ x +".png");
+        if(++z ===10){
+            window.clearInterval(interval);
+        }
+    
+        }, 75);
+    
+}
+
 function RollDice(){
     x = Math.floor((Math.random() * 6) + 1);
     $("#dice1").attr("src", "pics/dice"+ x +".png");
@@ -63,7 +79,6 @@ function Verify(){
 
 function AddResult(name, score){
     var table = document.getElementById('results').getElementsByTagName('tbody')[0];
-    //let table =document.getElementById("results");
     let row = table.insertRow(-1);
 
     let cell1=row.insertCell(0);
@@ -78,4 +93,12 @@ function UpdateTotal(x){
     total-=x;
     $("#total").text(total);
 
+}
+
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+    end = new Date().getTime();
+    }
 }

@@ -1,4 +1,4 @@
-$("#diceholder").click(RollDice);
+$("#diceholder").click(ShuffleDice);
 
 $("#reset").click(Reset);
 
