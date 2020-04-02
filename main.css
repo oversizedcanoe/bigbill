@@ -1,27 +1,38 @@
-html{
-    background-color: red;
-}
 body{
     width: 70%;
     margin: auto;
+    background-color: blue;
 }
 #container{
-    background-color: yellow ;
     margin: auto;
     text-align: center;
+    background-color: aqua;
+}
+#cardholder{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    background-color: brown;
+}
+.row{
+
 }
 .card{
-    height: 200px;
+    height:200px;
 }
 #diceholder{
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    height: 250px;
-    width: 500px;
-    background-color: blue;
+    max-width: 500px;
     border: 5px solid black;
     display: block;
+    text-align: center;
+    position: relative;
+}
+.dice{
+    display: inline-block;
+    margin: 2rem;
 }
 input[type="text"]{
     width: 70px;
