@@ -11,7 +11,7 @@
         <h1>Big Bill</h1>
         <div id="cardholder">
             <div class="row">
-                <img class="card" id="A" onclick="FlipCard('A')" src="./pics/AS.png">
+                <img class="card" id="1" onclick="FlipCard('1')" src="./pics/1S.png">
                 <img class="card" id="2" onclick="FlipCard('2')" src="./pics/2S.png">
                 <img class="card" id="3" onclick="FlipCard('3')" src="./pics/3S.png">
                 <img class="card" id="4" onclick="FlipCard('4')" src="./pics/4S.png">
@@ -23,26 +23,27 @@
                 <img class="card" id="8" onclick="FlipCard('8')" src="./pics/8S.png">
                 <img class="card" id="9" onclick="FlipCard('9')" src="./pics/9S.png">
                 <img class="card" id="10" onclick="FlipCard('10')" src="./pics/10S.png">
-                <img class="card" id="J" onclick="FlipCard('J')" src="./pics/JS.png">
-                <img class="card" id="Q" onclick="FlipCard('Q')" src="./pics/QS.png">
+                <img class="card" id="11" onclick="FlipCard('11')" src="./pics/11S.png">
+                <img class="card" id="12" onclick="FlipCard('12')" src="./pics/12S.png">
             </div>
         </div>
         <div id="diceholder">
             <img class="dice" id="dice1" src="pics/dice.png">
             <img class="dice" id="dice2" src="pics/dice.png">
         </div>
+        <p>Current Score: <span id="total">78</span></p>
         <button id="reset">Reset cards and dice</button>
     </div>
     <div id="players">
-        <h2>Players</h2>
+        <h1>Players</h1>
         <form id="playerAdd">
             <label for="name">Name: </label>
-            <input id="name" type="text" width=></input>
+            <input id="name" name="name" type="text" width=></input>
 
             <label for="score">Score: </label>
-            <input id="score" type="text"></input>
+            <input id="score" name="score" type="text"></input>
 
-            <button id="submit">Submit</button>
+            <button type="button" id="button">Submit</button>
         </form>
 
         <table id="results">
@@ -50,6 +51,9 @@
                 <td>Name</td>
                 <td>Score</td>
             </thead>
+            <tbody>
+
+            </tbody>
 
         </table>
     </div>

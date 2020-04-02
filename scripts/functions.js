@@ -1,6 +1,6 @@
 let x;
 let list = [];
-let cards= ["A",2,3,4,5,6,7,8,9,10,"J","Q"];
+let total = 78;
 
 function RollDice(){
     x = Math.floor((Math.random() * 6) + 1);
@@ -21,20 +21,61 @@ function FlipCard(y){
 
     if(counter%2 == 1){
         $("#" + y).attr("src", "pics/" + y + "S.png");
+        UpdateTotal(-y);
     } else{
     $("#" + y).attr("src", "pics/red_back.png");
+    UpdateTotal(y);
     }
-
+    
     list.push(y);
 }
-
 
 function Reset(){
     list=[];
     $("#dice1").attr("src", "pics/dice.png");
     $("#dice2").attr("src", "pics/dice.png");
-    for(i=0;i<cards.length;i++){
-        $("#" + cards[i]).attr("src", "pics/" + cards[i] + "S.png");
+    for(i=1;i<13;i++){
+        $("#" + i).attr("src", "pics/" + i + "S.png");
     }
+}
+
+
+function Verify(){
+    let valid = true;
+
+    var name = $("#name").val();
+    var score = $("#score").val();
+    if (name == "" && score == ""){
+        valid = false;
+        alert("Please enter a name and score");
+    } else if (score == ""){
+        valid= false;
+        alert("Please enter a score");
+    } else if (name == ""){
+        valid= false;
+        alert("Please enter a name");
+    }
+
+    if(valid){
+        AddResult(name, score);
+    } 
+}
+
+function AddResult(name, score){
+    var table = document.getElementById('results').getElementsByTagName('tbody')[0];
+    //let table =document.getElementById("results");
+    let row = table.insertRow(-1);
+
+    let cell1=row.insertCell(0);
+    let cell2=row.insertCell(1);
+
+    cell1.innerHTML = name;
+    cell2.innerHTML = score;
+    
+}
+
+function UpdateTotal(x){
+    total-=x;
+    $("#total").text(total);
 
 }

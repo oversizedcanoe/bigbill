@@ -1,18 +1,18 @@
+html{
+    font-size: 16px;
+}
 body{
     width: 70%;
     margin: auto;
-    background-color: blue;
 }
 #container{
     margin: auto;
     text-align: center;
-    background-color: aqua;
 }
 #cardholder{
     width: 90%;
     height: 30%;
     margin: auto;
-    background-color: brown;
 }
 .row{
 
@@ -39,4 +39,29 @@ input[type="text"]{
 }
 #submit{
     margin-left:1rem;
+}
+
+form{
+    font-size: 1.8rem;
+}
+button{
+    font-size: 1.8rem;
+}
+table{
+    margin-top: 2rem;
+    width: 400px;
+    border: 2px solid black;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+thead td{
+    font-weight: 900;
+    color: white;
+    background-color: black;
+}
+td{
+    border-bottom: 1px solid black;
+}
+tr:nth-child(even){
+    background-color: darkgray;
 }
