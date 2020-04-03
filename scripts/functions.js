@@ -106,3 +106,10 @@ function wait(ms){
     end = new Date().getTime();
     }
 }
+
+function RollThirdDice(){
+    d = Math.floor((Math.random() * 6) + 1);
+    alert("First, take a huge drink.")
+    alert("I said a BIG drink.")
+    alert("You rolled a " + d + ". You can either ADD or MINUS this from your original roll. For example if you have a 9, and roll a 5 here, you can either take a 4, or a 14.")
+}

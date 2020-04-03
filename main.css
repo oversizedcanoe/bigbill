@@ -18,6 +18,7 @@ body{
     margin: auto;
     background-color: green;
     border: 5px solid brown;
+    border-radius: 10px;
 }
 img.card{
     width: 20%;
@@ -35,6 +36,7 @@ img.card{
     text-align: center;
     position: relative;
     background-color: maroon;
+    border-radius: 25px;
 }
 .dice{
     width: 30%;
