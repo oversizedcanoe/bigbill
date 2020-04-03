@@ -75,6 +75,8 @@ function Verify(){
     }
 
     if(valid){
+        $("#name").val("");
+        $("#score").val("");
         AddResult(name, score);
     } 
 }

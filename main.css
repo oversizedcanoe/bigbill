@@ -1,23 +1,23 @@
 html{
     font-size: 16px;
-    background-color: yellow;
 }
 body{
     width: 70%;
     margin: auto;
-    background-color: darkkhaki;
+    background-color: floralwhite;
 }
 #container{
     margin: auto;
     text-align: center;
-    background-color: darkmagenta;
 }
 #cardholder{
+    padding: 1rem;
     width: 90%;
     max-width: 900px;
     height: 30%;
     margin: auto;
-    background-color: darkorange;
+    background-color: green;
+    border: 10px solid brown;
 }
 img.card{
     width: 20%;
@@ -30,11 +30,11 @@ img.card{
     margin-bottom: 2rem;
     max-width: 500px;
     height: auto;
-    border: 5px solid black;
+    border: 5px solid brown;
     display: block;
     text-align: center;
     position: relative;
-    background-color: ;
+    background-color: maroon;
 }
 .dice{
     width: 30%;
@@ -66,6 +66,7 @@ table{
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     font-size: 2rem;
+    background-color: whitesmoke;
 }
 thead td{
     font-weight: 900;
