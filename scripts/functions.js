@@ -15,7 +15,6 @@ function ShuffleDice(){
         }
     
         }, 75);
-    
 }
 
 function RollDice(){
